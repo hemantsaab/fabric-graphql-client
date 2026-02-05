@@ -116,3 +116,13 @@ It is intended as a learning/demo project and architectural reference.
 - `node_modules` and build artifacts are excluded from source control
 - No credentials or tokens are stored in the repository
 - This project uses a development-only authentication approach
+
+## 🧩 Database Setup (Warehouse)
+
+See the `sql/` folder for scripts:
+
+- `01_table_Items.sql` – creates `dbo.Items`
+- `02_sp_AddItem.sql` – inserts item (returns inserted row)
+- `03_sp_UpdateQuantity.sql` – updates quantity (returns updated row + flag)
+- `04_sp_DeleteItem.sql` – deletes item (returns deleted flag)
+- `05_sp_GetItems.sql` – paged read of items
